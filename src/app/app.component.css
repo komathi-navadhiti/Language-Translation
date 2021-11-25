@@ -1,0 +1,54 @@
+
+.card {
+    padding: 15px;
+    width:45%;
+    margin-left: 25%;
+    top:10%;
+  }
+  
+  .form-element {
+    padding: 7px;
+    width: 75%;
+  } 
+
+  .MuiButton-label{
+    width:100%;
+    display:inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    font-size: 0.875rem;
+  }
+
+  .button{
+    background-color:#377AA0;
+    color: #FFFFFF;
+    font-size: 14px;
+  }
+
+  body{
+      background-color: skyblue;
+  }
+
+  h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color:rgba(0, 0, 0, 0.87);
+  }
+
+  .makeStyles-title-10{
+    font: 34px Roboto,RobotoDraft,sans-serif;
+    margin: 16px 0 32px 0;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  
+  
+  a{
+    text-decoration: none;
+  }

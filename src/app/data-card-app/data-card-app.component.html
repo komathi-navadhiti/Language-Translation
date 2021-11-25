@@ -1,0 +1,12 @@
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="20px" fxLayoutAlign="center center" class="content">
+    <mat-card *ngFor="let num of members" fxFlex="20%" class="example-card" [style.backgroundColor]="num.bgcolor" [style.color]="num.color">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title class="title">{{num.title}}</mat-card-title>
+        </mat-card-header>
+        <!-- <button mat-button>{{num.content}}</button> -->
+        <div>
+            <button mat-button class="mat-button-inner">{{ num.content | translate}}</button>
+        </div>
+    </mat-card>
+</div>

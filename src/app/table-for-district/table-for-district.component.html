@@ -1,0 +1,47 @@
+<!-- <h2>  
+    India flag icon -> <span class="flag-icon flag-icon-in flag-icon-squared"></span> 
+</h2> -->
+
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" >
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+          <!-- country Column -->
+    <ng-container matColumnDef="icon">
+      <th mat-header-cell *matHeaderCellDef ></th>
+      <td mat-cell *matCellDef="let element"></td>
+    </ng-container>
+
+    <!-- country Column -->
+    <ng-container matColumnDef="states">
+      <th mat-header-cell *matHeaderCellDef> States </th>
+      <td mat-cell *matCellDef="let element">{{element.states}} </td>
+    </ng-container>
+  
+    <!-- confirmed Column -->
+    <ng-container matColumnDef="Confirmed">
+      <th mat-header-cell *matHeaderCellDef> Confirmed </th>
+      <td mat-cell *matCellDef="let element"> {{element.Confirmed}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="Recovered">
+      <th mat-header-cell *matHeaderCellDef> Recovered </th>
+      <td mat-cell *matCellDef="let element"> {{element.Recovered}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="Deaths">
+      <th mat-header-cell *matHeaderCellDef> Deaths </th>
+      <td mat-cell *matCellDef="let element"> {{element.Deaths}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  
+ 
+
